@@ -10,7 +10,7 @@ class Api::UsersController < Api::ApiController
     user.generate_api_key
 
     if user.save
-      render_ok({user: user}))
+      render_ok({user: user})
     else
       render_error(user.errors)
     end
