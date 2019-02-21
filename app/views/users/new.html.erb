@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-1 offset-1 py-2">
+    <%= link_to users_path do %>
+      <%= fa_icon "undo 2x" %>
+    <% end %>
+  </div>
+  <div class="col">
+    <h1>New User</h1>
+  </div>
+</div>
+
+<%= render 'form', user: @user %>
+
